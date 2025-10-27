@@ -7,8 +7,6 @@
    cd SAIR
 ./setup.sh
 
-Access the tools:
-
 Wazuh → http://localhost:55000
 
 Shuffle → http://localhost:3001

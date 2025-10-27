@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   wazuh:
     image: wazuh/wazuh:4.9.0
@@ -11,7 +9,7 @@ services:
       - ./wazuh/config:/var/ossec/etc
       - ./wazuh/rules:/var/ossec/rules
     environment:
-      - WAZUH_PASSWORD=\${WAZUH_PASSWORD}
+      - WAZUH_PASSWORD=${WAZUH_PASSWORD}
 
   shuffle:
     image: frikky/shuffle:latest
